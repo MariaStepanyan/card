@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Practice card, styled components
+
+Created to meet https://www.figma.com/file/fidgvz4DVRJfpbtUvMz6LB/Training-SC
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

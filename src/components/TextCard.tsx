@@ -4,6 +4,7 @@ export const TextCard = styled.p`
   width: 260px;
   height: 40px;
   margin-left: 20px;
+  margin-top: 20px;
   font-family: Inter;
   font-size: 12px;
   font-weight: 500;
