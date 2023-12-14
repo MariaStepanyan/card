@@ -1,27 +1,29 @@
 import './App.css'
-import { Box } from './components/box.styled'
-import { ButtonCard, ButtonCard2 } from './components/ButtonCard'
-import { StyledCard } from './components/Card.styled'
+import { ButtonCard, ButtonCardSecond } from './components/ButtonCard'
+import { StyledCard } from './components/StyledCard'
 import { HeaderCard } from './components/HeaderCard'
-import { PhotoCard } from './components/photoCard/PhotoCard'
+import { PhotoCard } from './components/PhotoCard'
 import { TextCard } from './components/TextCard'
+import Img from './assets/images/photoCard.png'
+import { ContentCard } from './components/ContentCard'
+import { BtnWrap } from './components/BtnWrap'
 
 function App() {
   return (
-    <div>
-      <Box>
-        <StyledCard>
-          <PhotoCard aria-label="Card photo" />
-          <HeaderCard>Headline</HeaderCard>
-          <TextCard>
-            Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie
-            ornare in venen.
-          </TextCard>
+    <StyledCard aria-label="Product card">
+      <PhotoCard src={Img} alt="Card photo" />
+      <ContentCard aria-label='product information'>
+        <HeaderCard>Headline</HeaderCard>
+        <TextCard>
+          Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie
+          ornare in venen.
+        </TextCard>
+        <BtnWrap aria-label='buttons'>
           <ButtonCard>See more</ButtonCard>
-          <ButtonCard2>Save</ButtonCard2>
-        </StyledCard>
-      </Box>
-    </div>
+          <ButtonCardSecond>Save</ButtonCardSecond>
+        </BtnWrap>
+      </ContentCard>
+    </StyledCard>
   )
 }
 
